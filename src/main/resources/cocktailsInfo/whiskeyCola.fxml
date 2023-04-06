@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="257.0" fitWidth="176.0" layoutX="30.0" layoutY="40.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/whiskeyCola.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="252.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виски кола">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="300.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="296.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кола 150 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="292.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Виски 50 мл" wrappingWidth="176.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

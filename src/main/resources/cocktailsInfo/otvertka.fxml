@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="245.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отвёртка">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водка 50 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="239.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Апельсиновый сок 150 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="291.0" fitWidth="225.0" layoutX="14.0" layoutY="44.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/otvertka.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

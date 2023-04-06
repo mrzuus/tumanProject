@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="239.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Рафаэлло">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="258.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="249.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Малибу(Кокос) 25 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="249.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кремовый ликёр 25 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="249.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кокосовая стружка" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

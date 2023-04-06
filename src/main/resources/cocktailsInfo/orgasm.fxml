@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="252.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кричащий оргазм">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="253.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="252.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водка 40 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="252.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кофейный ликер 20 мл" wrappingWidth="323.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сливочный ликер 40 мл" wrappingWidth="343.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="282.0" fitWidth="208.0" layoutY="17.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/orgasm.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="115.25" endY="-1.29290771484375" layoutX="94.0" layoutY="299.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="103.29289245605469" endY="2.29290771484375" layoutX="104.0" layoutY="14.0" startX="-104.0" startY="2.29290771484375" stroke="WHITE" />
+      <Line endX="21.5" endY="209.0" layoutX="189.0" layoutY="88.0" startX="19.0" startY="-71.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

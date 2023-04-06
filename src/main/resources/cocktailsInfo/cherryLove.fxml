@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/19.0.2.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="239.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вишневая любовь">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="239.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="234.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Трипл сек 60 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="235.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вишневый сок 100 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="236.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сок лайма 10 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="237.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сок лимона 10 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="307.0" fitWidth="222.0" layoutX="6.0" layoutY="52.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/cherryLove.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="239.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лонг Айленд">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="239.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="238.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сок апельсиновый 20 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="239.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сок лайма 5 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="302.0" fitWidth="234.0" layoutY="32.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/longIsland.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="236.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Трипл сек 10 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="236.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водка 20 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="238.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Джин 20 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="236.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Белый ром 20 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="235.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кола 150 мл" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="233.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лёд" wrappingWidth="365.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

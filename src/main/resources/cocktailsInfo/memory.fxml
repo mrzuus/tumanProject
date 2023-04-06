@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="252.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стиратель памяти">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водка 60 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кофейный ликер 60 мл" wrappingWidth="323.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сливочный ликер 60 мл" wrappingWidth="343.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="264.0" fitWidth="213.0" layoutX="14.0" layoutY="19.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/150_image_1481898356095.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="89.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наполните олд-фэшн бокал льдом. Налейте кофейный ликер. Добавьте водку. Долейте сверху тоник." wrappingWidth="481.421875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

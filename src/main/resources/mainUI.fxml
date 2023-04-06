@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="545.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.mainController">
+   <children>
+      <Button fx:id="cocktailMap" layoutX="33.0" layoutY="28.0" mnemonicParsing="false" onAction="#openCockMap" prefHeight="81.0" prefWidth="177.0" text="Коктейльная карта">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="openTables" layoutX="33.0" layoutY="138.0" mnemonicParsing="false" onAction="#openTablesMenu" prefHeight="81.0" prefWidth="177.0" text="Открыть столы">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeShift" layoutX="33.0" layoutY="250.0" mnemonicParsing="false" onAction="#closeAndSave" prefHeight="81.0" prefWidth="177.0" text="Закрыть смену">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" layoutX="238.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+      <Text layoutX="251.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выручка:" wrappingWidth="92.705078125">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="251.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выручка по переводу:">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="251.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выручка наличными:" wrappingWidth="177.0">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="251.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выручка работника:" wrappingWidth="177.0">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="revenue" layoutX="326.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="revenueTransfer" layoutX="422.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="revenueCash" layoutX="414.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="revenueStuff" layoutX="414.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="251.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выручка безналом:" wrappingWidth="177.0">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="revenueCard" layoutX="414.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

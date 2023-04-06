@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="294.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.closeShiftController">
+   <children>
+      <AnchorPane layoutX="57.0" layoutY="21.41796875">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите дату смены">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="fieldData" layoutX="58.0" layoutY="37.0" prefHeight="36.0" prefWidth="183.0" promptText="01.01.2000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="confirmCloseButton" layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#confirmClose" prefHeight="33.0" prefWidth="109.0" text="Закрыть смену" />
+      <Button fx:id="cancel" cancelButton="true" layoutX="161.0" layoutY="91.0" mnemonicParsing="false" onAction="#close" prefHeight="33.0" prefWidth="118.0" text="Отмена" />
+   </children>
+</AnchorPane>

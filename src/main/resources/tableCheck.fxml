@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="395.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/19.0.2.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.tableCheckInfo">
+   <children>
+      <TableView fx:id="tablePositions" layoutX="13.0" layoutY="14.0" prefHeight="339.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="position" prefWidth="140.0" text="Позиции" />
+            <TableColumn fx:id="count" minWidth="5.0" prefWidth="58.0" text="Кол-во" />
+            <TableColumn fx:id="price" minWidth="5.0" prefWidth="66.0" text="Цена" />
+          <TableColumn fx:id="sum" prefWidth="96.0" text="Сумма" />
+        </columns>
+      </TableView>
+      <Button fx:id="close" cancelButton="true" layoutX="109.0" layoutY="371.0" mnemonicParsing="false" onAction="#closeCheck" prefHeight="41.0" prefWidth="163.0" text="Закрыть">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

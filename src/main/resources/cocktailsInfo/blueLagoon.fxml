@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/19.0.2.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="252.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Голубая лагуна">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состав:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Водка 50 мл">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Блю Кюрасао 20 мл" wrappingWidth="323.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Спрайт 150 мл" wrappingWidth="343.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="380.0" fitWidth="298.0" layoutX="-79.0" layoutY="-24.0">
+         <image>
+            <Image url="@../cocktailsInfo/cocktailsImages/b7339fa79ce01e09f1d72400d2d5f741.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="237.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лёд" wrappingWidth="343.55908203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

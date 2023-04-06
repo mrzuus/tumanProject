@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="716.0" prefWidth="1279.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/19.0.2.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.coctailsWindow">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="125.0" prefWidth="946.0">
+         <children>
+            <Button fx:id="whiskeyCola" mnemonicParsing="false" onAction="#whiskeyWindow" prefHeight="150.0" prefWidth="150.0" text="Виски-кола">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="orgasm" mnemonicParsing="false" onAction="#orgasmWindow" prefHeight="126.0" prefWidth="163.0" text="Кричащий оргазм">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="memory" mnemonicParsing="false" onAction="#memoryWindow" prefHeight="126.0" prefWidth="156.0" text="Стиратель памяти">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="blueLagoon" mnemonicParsing="false" onAction="#blueLagoonWindow" prefHeight="150.0" prefWidth="150.0" text="Голубая лагуна">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="blackRussian" mnemonicParsing="false" onAction="#blackRussianWIndow" prefHeight="138.0" prefWidth="159.0" text="Черный русский">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="deadMan" mnemonicParsing="false" onAction="#deadmanWindow" prefHeight="125.0" prefWidth="167.0" text="Благодарный мертвец">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="139.0" prefHeight="125.0" prefWidth="946.0">
+         <children>
+            <Button fx:id="aperol" mnemonicParsing="false" onAction="#aperolWindow" prefHeight="150.0" prefWidth="150.0" text="Апероль спритц">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="negroni" mnemonicParsing="false" onAction="#negroniWindow" prefHeight="126.0" prefWidth="163.0" text="Негрони">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="otvertka" mnemonicParsing="false" onAction="#otvertkaWIndow" prefHeight="126.0" prefWidth="156.0" text="Отвертка">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="ginTonic" mnemonicParsing="false" onAction="#ginTonicWindow" prefHeight="150.0" prefWidth="150.0" text="Джин тоник">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="flyToMoon" mnemonicParsing="false" onAction="#flyToMoonWindow" prefHeight="138.0" prefWidth="159.0" text="Полет на луну">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="greenSpirit" mnemonicParsing="false" onAction="#greenSpirit" prefHeight="125.0" prefWidth="167.0" text="Зеленая фея">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="264.0" prefHeight="125.0" prefWidth="946.0">
+         <children>
+            <Button fx:id="shurup" mnemonicParsing="false" onAction="#shurupWindow" prefHeight="125.0" prefWidth="155.0" text="Шуруповерт">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="tequilaBoom" mnemonicParsing="false" onAction="#tequilaBoomWindow" prefHeight="125.0" prefWidth="171.0" text="Текила бум">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="longIsland" mnemonicParsing="false" onAction="#longIslandWIndow" prefHeight="125.0" prefWidth="152.0" text="Лонг Айленд">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="margarita" mnemonicParsing="false" onAction="#margaritaWIndow" prefHeight="125.0" prefWidth="153.0" text="Маргарита ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="strawberryMargarita" contentDisplay="CENTER" mnemonicParsing="false" onAction="#strawberryMargaritaWindow" prefHeight="125.0" prefWidth="163.0" text="Маргарита клубничная" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="daiquiri" mnemonicParsing="false" onAction="#daiquiriWindow" prefHeight="125.0" prefWidth="167.0" text="Дайкири">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="389.0" prefHeight="125.0" prefWidth="946.0">
+         <children>
+            <Button fx:id="pinaColada" mnemonicParsing="false" onAction="#pinaColadaWindow" prefHeight="125.0" prefWidth="154.0" text="Пина колада">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="husband" mnemonicParsing="false" onAction="#husbandWindow" prefHeight="125.0" prefWidth="166.0" text="День без мужа">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="meeting" mnemonicParsing="false" onAction="#meetingWindow" prefHeight="125.0" prefWidth="153.0" text="Свидание">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="cherryLove" mnemonicParsing="false" onAction="#cherryLoveWindow" prefHeight="150.0" prefWidth="150.0" text="   Вишневая       любовь" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="TequilaSunrise" mnemonicParsing="false" onAction="#TequilaSunriseWindow" prefHeight="138.0" prefWidth="159.0" text="Текила Санрайз">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="mohito" mnemonicParsing="false" onAction="#mohitoWIndow" prefHeight="125.0" prefWidth="167.0" text="Мохито">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="514.0" prefHeight="125.0" prefWidth="946.0">
+         <children>
+            <Button fx:id="cubaLibra" mnemonicParsing="false" onAction="#cubaLibraWIndow" prefHeight="150.0" prefWidth="150.0" text="Куба либре">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="headShot" mnemonicParsing="false" onAction="#headshotWindow" prefHeight="126.0" prefWidth="163.0" text="Выстрел в голову" underline="true" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="hiroshima" mnemonicParsing="false" onAction="#hiroshimaWindow" prefHeight="126.0" prefWidth="156.0" text="Хиросима" underline="true" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="medusa" mnemonicParsing="false" onAction="#medusaWIndow" prefHeight="150.0" prefWidth="150.0" text="Медуза" underline="true" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="boyarsky" mnemonicParsing="false" onAction="#boyarskyWindow" prefHeight="138.0" prefWidth="159.0" text="Боярский" underline="true" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="b52" mnemonicParsing="false" onAction="#b52Window" prefHeight="125.0" prefWidth="167.0" text="Б52" underline="true" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="closeMap" cancelButton="true" layoutX="1053.0" layoutY="639.0" mnemonicParsing="false" onAction="#Close" prefHeight="67.0" prefWidth="205.0" text="Закрыть">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="rafaello" layoutX="960.0" layoutY="513.0" mnemonicParsing="false" onAction="#rafaelloWindow" prefHeight="125.0" prefWidth="149.0" text="Рафаэлло" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeless" layoutX="960.0" layoutY="389.0" mnemonicParsing="false" onAction="#homelessWindow" prefHeight="125.0" prefWidth="149.0" text="Бомж" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="beetle" layoutX="1109.0" layoutY="389.0" mnemonicParsing="false" onAction="#beetleWindow" prefHeight="126.0" prefWidth="159.0" text="Таракан" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

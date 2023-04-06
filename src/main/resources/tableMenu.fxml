@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/19.0.2.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.choiseTable">
+   <children>
+      <Button fx:id="vipTable" layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#openVip" prefHeight="70.0" prefWidth="130.0" text="VIP" />
+      <Button fx:id="firstTable" layoutX="146.0" layoutY="104.0" mnemonicParsing="false" onAction="#openFirst" prefHeight="70.0" prefWidth="114.0" text="1" />
+      <Button fx:id="secondTable" layoutX="278.0" layoutY="104.0" mnemonicParsing="false" onAction="#openSecond" prefHeight="70.0" prefWidth="114.0" text="2" />
+      <Button fx:id="thirdTable" layoutX="406.0" layoutY="104.0" mnemonicParsing="false" onAction="#openThird" prefHeight="70.0" prefWidth="114.0" text="3" />
+      <Button fx:id="fourth" layoutX="186.0" layoutY="263.0" mnemonicParsing="false" onAction="#openFourth" prefHeight="70.0" prefWidth="114.0" text="4" />
+      <Button fx:id="Fifth" layoutX="349.0" layoutY="263.0" mnemonicParsing="false" onAction="#openFifth" prefHeight="70.0" prefWidth="114.0" text="5" />
+   </children>
+</AnchorPane>
