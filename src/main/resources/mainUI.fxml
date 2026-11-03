@@ -7,6 +7,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="545.0" style="-fx-background-image: url('https://motionarray.imgix.net/preview-75634-8YcoQ8Fyf3_0000.jpg');" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.mainController">
    <children>
+      <Button layoutX="33.0" layoutY="340.0" text="Настройки" onAction="#openSettings" />
+      <Button layoutX="150.0" layoutY="340.0" text="История и возвраты" onAction="#openHistory" />
       <Button fx:id="cocktailMap" layoutX="33.0" layoutY="28.0" mnemonicParsing="false" onAction="#openCockMap" prefHeight="81.0" prefWidth="177.0" text="Коктейльная карта">
          <font>
             <Font size="17.0" />
