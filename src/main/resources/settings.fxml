@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.SettingsController" fx:id="root" prefWidth="700" prefHeight="560" style="-fx-padding: 16;">
+    <top><Label text="Изменения применяются кнопкой «Сохранить настройки». Старые заказы и чеки сохраняют свои цены." wrapText="true" /></top>
+    <center><TabPane tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Меню"><content><VBox fx:id="productsPane" spacing="10" /></content></Tab>
+            <Tab text="Столы"><content><VBox fx:id="tablesPane" spacing="10" /></content></Tab>
+            <Tab text="Сотрудник"><content><VBox spacing="10"><Label text="Процент сотрудника от итоговой выручки смены" /><TextField fx:id="percent" prefWidth="120" /></VBox></content></Tab>
+        </tabs>
+    </TabPane></center>
+    <bottom><VBox spacing="10" style="-fx-padding: 12 0 0 0;"><Label fx:id="status" /><Button fx:id="saveSettings" text="Сохранить настройки" onAction="#save" /></VBox></bottom>
+</BorderPane>

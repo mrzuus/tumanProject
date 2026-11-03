@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefWidth="800" prefHeight="520" style="-fx-padding: 16;">
+    <top><VBox spacing="10">
+        <Label text="Выберите позиции, укажите количество и цену в целых рублях." />
+        <Button text="Ещё строка" onAction="#addRow" />
+    </VBox></top>
+    <center><ScrollPane fitToWidth="true"><content><VBox fx:id="rows" spacing="10" /></content></ScrollPane></center>
+    <bottom><VBox spacing="10" style="-fx-padding: 12 0 0 0;">
+        <Label fx:id="totalSum" text="0" />
+        <HBox spacing="10">
+            <Button fx:id="addPos" text="Добавить заказ" onAction="#addPosition" />
+            <Button fx:id="openCheck" text="Открыть чек" onAction="#openTableCheck" />
+            <Button fx:id="payOff" text="Оплата" onAction="#pay" />
+        </HBox>
+    </VBox></bottom>
+</BorderPane>

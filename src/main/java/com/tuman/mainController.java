@@ -1,116 +1,69 @@
 package com.tuman;
 
-import javafx.beans.binding.Bindings;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.beans.value.ObservableValue;
+import com.tuman.cash.CashState.PaymentMethod;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.StringConverter;
-import javafx.util.converter.NumberStringConverter;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.math.BigDecimal;
 
 public class mainController implements Initializable {
-    @FXML
-    private Button closeShift;
+    @FXML private Button closeShift;
+    @FXML private Text revenue, revenueCash, revenueCard, revenueTransfer, revenueStuff;
+    private static mainController active;
 
-    @FXML
-    private Button cocktailMap;
-
-    @FXML
-    private Text countOpenTables;
-    @FXML
-    private Text revenueCard;
-
-    @FXML
-    private Button openTables;
-
-    @FXML
-    private  Text revenue;
-
-
-    @FXML
-    private Text revenueCash ;
-
-
-    @FXML
-    private Text revenueStuff;
-
-    @FXML
-    private Text revenueTransfer;
-    public static Text staticRevenueLabel;
-    public static Text staticCashRevenueLabel;
-    public static Text staticCardRevenueLabel;
-    public static Text staticTransferRevenueLabel;
-    public static Text staticStuffRevenueLabel;
-public static totalCash money = new totalCash();
-   public static SimpleStringProperty moneyProperty = new SimpleStringProperty();
-    public static int CurrentMoneyProperty = 0;
-    private void openNewScene(String window, String Title) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(window));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.setTitle(Title);
-        stage.initModality(Modality.NONE);
-        stage.show();
-        stage.setResizable(false);
-
+    public static void showError(Exception e) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Не удалось выполнить действие");
+        alert.setHeaderText("Действие не выполнено");
+        alert.setContentText(e instanceof ArithmeticException ? "Сумма слишком большая. Уменьшите количество или цену."
+                : e.getMessage() == null ? "Не удалось сохранить данные кассы." : e.getMessage());
+        alert.showAndWait();
     }
 
-    public void openCockMap(ActionEvent actionEvent) {
-        cocktailMap.setOnAction(event -> {
-            try {
-                openNewScene("coctailMenu.fxml", "Коктейльная карта");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+    public static void refreshRevenueLabels() {
+        if (active == null || Main.register == null) return;
+        try {
+        active.revenue.setText(String.valueOf(Main.register.revenue(null)));
+        active.revenueCash.setText(String.valueOf(Main.register.revenue(PaymentMethod.CASH)));
+        active.revenueCard.setText(String.valueOf(Main.register.revenue(PaymentMethod.CARD)));
+        active.revenueTransfer.setText(String.valueOf(Main.register.revenue(PaymentMethod.TRANSFER)));
+        active.revenueStuff.setText(BigDecimal.valueOf(Main.register.revenue(null))
+                .multiply(Main.config.employeePercent).movePointLeft(2).stripTrailingZeros().toPlainString());
+        } catch (java.io.IOException e) { showError(e); }
     }
 
-    public void openTablesMenu(ActionEvent actionEvent) {
-        openTables.setOnAction(event -> {
-            try {
-                openNewScene("tableMenu.fxml", "Столы");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+    private void openNewScene(String resource, String title) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(resource));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle(title);
+            stage.initOwner(closeShift.getScene().getWindow());
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.setOnCloseRequest(event -> { if (FxJobs.isBusy()) event.consume(); });
+            stage.setResizable(false);
+            stage.show();
+        } catch (Exception e) { showError(e); }
     }
 
-    public void closeAndSave(ActionEvent actionEvent) {
-        closeShift.setOnAction(event -> {
-            try {
-                openNewScene("confirmCloseShift.fxml", "Коктейльная карта");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        System.out.println(money.getCashRevenue() +   " - is cash   ");
-        System.out.println(money.getCardRevenue() +   " - is card   ");
-        System.out.println(money.getTransferRevenue() + " - is trasfer");
-        System.out.println(money.getTotalMoney() +   " - is Total  ");
-    }
+    public void openCockMap(ActionEvent event) { openNewScene("coctailMenu.fxml", "Коктейльная карта"); }
+    public void openTablesMenu(ActionEvent event) { openNewScene("tableMenu.fxml", "Столы"); }
+    public void closeAndSave(ActionEvent event) { openNewScene("confirmCloseShift.fxml", "Закрытие смены"); }
+    public void openSettings(ActionEvent event) { openNewScene("settings.fxml", "Настройки кассы"); }
+    public void openHistory(ActionEvent event) { openNewScene("history.fxml", "История чеков и возвраты"); }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-staticRevenueLabel = revenue;
-        staticCashRevenueLabel = revenueCash;
-        staticCardRevenueLabel = revenueCard;
-        staticTransferRevenueLabel = revenueTransfer;
-        staticStuffRevenueLabel = revenueStuff;
+    @Override public void initialize(URL url, ResourceBundle resources) {
+        active = this;
+        refreshRevenueLabels();
     }
 }

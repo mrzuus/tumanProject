@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuman.HistoryController" fx:id="root" prefWidth="950" prefHeight="620" style="-fx-padding: 16;">
+    <center><TabPane tabClosingPolicy="UNAVAILABLE"><tabs>
+        <Tab text="Чеки"><content><VBox spacing="10">
+            <HBox spacing="8"><Label text="С" /><DatePicker fx:id="from" /><Label text="По" /><DatePicker fx:id="through" /><Button text="Все даты" onAction="#allDates" /></HBox>
+            <HBox spacing="8"><TextField fx:id="search" promptText="Номер чека, стол или позиция" HBox.hgrow="ALWAYS" onAction="#find" /><ComboBox fx:id="method" /><Button fx:id="findReceipts" text="Найти" onAction="#find" /></HBox>
+            <ListView fx:id="receipts" VBox.vgrow="ALWAYS" />
+            <HBox spacing="10"><Button fx:id="previous" text="Назад" onAction="#previous" /><Label fx:id="page" /><Button fx:id="next" text="Далее" onAction="#next" /><Button text="Открыть чек / возврат" onAction="#openReceipt" /></HBox>
+        </VBox></content></Tab>
+        <Tab fx:id="auditTab" text="Журнал изменений"><content><VBox spacing="10">
+            <Label text="Заказы, оплаты, возвраты, настройки и закрытие смен. Пользователь — учётная запись компьютера." wrapText="true" />
+            <Button text="Обновить журнал" onAction="#refreshAudit" />
+            <ListView fx:id="audit" VBox.vgrow="ALWAYS" />
+            <HBox spacing="10"><Button fx:id="auditPrevious" text="Назад" onAction="#auditPrevious" /><Label fx:id="auditPage" /><Button fx:id="auditNext" text="Далее" onAction="#auditNext" /></HBox>
+        </VBox></content></Tab>
+    </tabs></TabPane></center>
+</BorderPane>

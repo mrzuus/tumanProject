@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "employeePercent": 10,
+  "products": [
+    {
+      "id": "whiskeyCola",
+      "name": "Виски кола",
+      "price": 250,
+      "recipe": "whiskeyCola.fxml"
+    },
+    {
+      "id": "orgasm",
+      "name": "Кричащий оргазм",
+      "price": 250,
+      "recipe": "orgasm.fxml"
+    },
+    {
+      "id": "memory",
+      "name": "Стиратель памяти",
+      "price": 350,
+      "recipe": "memory.fxml"
+    },
+    {
+      "id": "blueLagoon",
+      "name": "Голубая лагуна",
+      "price": 250,
+      "recipe": "blueLagoon.fxml"
+    },
+    {
+      "id": "blackRussian",
+      "name": "Черный русский",
+      "price": 200,
+      "recipe": "blackRussian.fxml"
+    },
+    {
+      "id": "deadman",
+      "name": "Благодарный мертвец",
+      "price": 250,
+      "recipe": "deadman.fxml"
+    },
+    {
+      "id": "negroni",
+      "name": "Негрони",
+      "price": 300,
+      "recipe": "negroni.fxml"
+    },
+    {
+      "id": "otvertka",
+      "name": "Отвертка",
+      "price": 150,
+      "recipe": "otvertka.fxml"
+    },
+    {
+      "id": "ginTonic",
+      "name": "Джин тоник",
+      "price": 200,
+      "recipe": "ginTonic.fxml"
+    },
+    {
+      "id": "flyToMoon",
+      "name": "Полет на луну",
+      "price": 600,
+      "recipe": "flyToMoon.fxml"
+    },
+    {
+      "id": "greenSpirit",
+      "name": "Зеленая фея",
+      "price": 350,
+      "recipe": "greenSpirit.fxml"
+    },
+    {
+      "id": "tequilaBoom",
+      "name": "Текила бум",
+      "price": 200,
+      "recipe": "tequilaBoom.fxml"
+    },
+    {
+      "id": "longIsland",
+      "name": "Лонг Айленд",
+      "price": 350,
+      "recipe": "longIsland.fxml"
+    },
+    {
+      "id": "margarita",
+      "name": "Маргарита",
+      "price": 220,
+      "recipe": "margarita.fxml"
+    },
+    {
+      "id": "strawberryMargarita",
+      "name": "Маргарита клубничная",
+      "price": 370,
+      "recipe": "strawberryMargarita.fxml"
+    },
+    {
+      "id": "daiquiri",
+      "name": "Дайкири",
+      "price": 200,
+      "recipe": "daiquiri.fxml"
+    },
+    {
+      "id": "pinaColada",
+      "name": "Пина колада",
+      "price": 300,
+      "recipe": "pinaColada.fxml"
+    },
+    {
+      "id": "husband",
+      "name": "День без мужа",
+      "price": 300,
+      "recipe": "husband.fxml"
+    },
+    {
+      "id": "meeting",
+      "name": "Свидание",
+      "price": 300,
+      "recipe": "meeting.fxml"
+    },
+    {
+      "id": "cherryLove",
+      "name": "Вишневая любовь",
+      "price": 300,
+      "recipe": "cherryLove.fxml"
+    },
+    {
+      "id": "tequilaSunrise",
+      "name": "Текила Санрайз",
+      "price": 250,
+      "recipe": "tequilaSunrise.fxml"
+    },
+    {
+      "id": "mohito",
+      "name": "Мохито",
+      "price": 200,
+      "recipe": "mohito.fxml"
+    },
+    {
+      "id": "cubaLibra",
+      "name": "Куба либре",
+      "price": 200,
+      "recipe": "cubaLibra.fxml"
+    },
+    {
+      "id": "headshot",
+      "name": "Выстрел в голову",
+      "price": 200,
+      "recipe": "headshot.fxml"
+    },
+    {
+      "id": "hiroshima",
+      "name": "Хиросима",
+      "price": 270,
+      "recipe": "hiroshima.fxml"
+    },
+    {
+      "id": "medusa",
+      "name": "Медуза",
+      "price": 250,
+      "recipe": "medusa.fxml"
+    },
+    {
+      "id": "boyarsky",
+      "name": "Боярский",
+      "price": 150,
+      "recipe": "boyarsky.fxml"
+    },
+    {
+      "id": "b52",
+      "name": "Б52",
+      "price": 200,
+      "recipe": "b52.fxml"
+    },
+    {
+      "id": "rafaello",
+      "name": "Рафаэлло",
+      "price": 220,
+      "recipe": "rafaello.fxml"
+    },
+    {
+      "id": "beetle",
+      "name": "Таракан",
+      "price": 300,
+      "recipe": "beetle.fxml"
+    },
+    {
+      "id": "bomj",
+      "name": "бомж",
+      "price": 100,
+      "recipe": null
+    },
+    {
+      "id": "aperol",
+      "name": "Апероль Шприц",
+      "price": 300,
+      "recipe": "aperol.fxml"
+    },
+    {
+      "id": "shurup",
+      "name": "Шуруповёрт",
+      "price": 300,
+      "recipe": "shurup.fxml"
+    }
+  ],
+  "tables": [
+    {
+      "id": "1",
+      "name": "Стол 1"
+    },
+    {
+      "id": "2",
+      "name": "Стол 2"
+    },
+    {
+      "id": "3",
+      "name": "Стол 3"
+    },
+    {
+      "id": "4",
+      "name": "Стол 4"
+    },
+    {
+      "id": "5",
+      "name": "Стол 5"
+    },
+    {
+      "id": "VIP",
+      "name": "VIP"
+    }
+  ]
+}
